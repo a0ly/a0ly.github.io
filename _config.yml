@@ -1,21 +1,53 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-title: a0ly Blog
-email: seungjeal@naver.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://a0ly.github.io/" # the base hostname & protocol for your site
-github_username:  a0ly
-
 # Build settings
-markdown: kramdown
-highlighter: pygments
+permalink   : /blog/:year/:title/
+markdown    : kramdown
+highlighter : rouge
+gems: [jekyll-paginate]
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+paginate: 4
+paginate_path: "/blog/page/:num/"
+comments: true
+
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed # expanded
+
+# SEO settings
+title: a0ly's blog
+description: ""
+keywords: "a0ly, blog, seungjae, web, node.js, angularjs, reactjs, sequelize, full-stack, development, blog, engineer"
+url: http://a0ly.github.io/
+baseurl: ""
+
+google_analytics: UA-76710855-1
+repo: https://github.com/a0ly/a0ly.github.io
+disqus_shortname: "a0ly"
+disqus_site_shortname: "a0ly"
+
+# Author settings
+author:
+  name      : Seungjae Lee
+  job       : Web Engineer
+  bio       : "세상이 조금 이롭게 되는데 도움이 되길 바라는 개발자입니다 :)<br/>세상과 컴퓨터 공학 그리고 웹기술에 관심이 많습니다."
+  thumb     : /images/author.jpg
+  email     : seungjeal@naver.com
+  url       : http://a0ly.github.io/
+  github    : https://github.com/a0ly
+#  twitter  : http://twitter.com/a0ly
+  facebook  : http://facebook.com/seungjae.lee.182940
+  linkedin  : https://kr.linkedin.com/in/승재-이-2175b310b
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  # - slug: resume
+  #   title: Resume
+  # - slug: skills
+  #   title: Skills
+  - slug: blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
