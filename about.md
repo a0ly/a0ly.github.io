@@ -15,7 +15,7 @@ permalink: /about/
 
 ---
 
-#### Personal projects
+<!-- #### Personal projects
  * [Sequelize Node.js ORM 공식문서 번역](http://a0ly.github.io/sequelize/)
  * [Enhanced bower package search page](http://a0ly.github.io/bowerSearch/#/)
- * [coolsms-rest-sdk npm package](https://github.com/a0ly/coolsms-rest-sdk)
+ * [coolsms-rest-sdk npm package](https://github.com/a0ly/coolsms-rest-sdk) -->
